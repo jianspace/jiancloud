@@ -1,0 +1,28 @@
+server:
+  port: 8091
+spring:
+  application:
+    name: jian-blogs
+  datasource:
+    url: jdbc:mysql://120.79.97.178:3306/jian_blogs?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: j839866596X!
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #hikari数据库连接池
+    hikari:
+      pool-name: Retail_HikariCP
+      minimum-idle: 2 #最小空闲连接数量
+      idle-timeout: 180000 #空闲连接存活最大时间，默认600000（10分钟）
+      maximum-pool-size: 5 #连接池最大连接数，默认是10
+      auto-commit: true  #此属性控制从池返回的连接的默认自动提交行为,默认值：true
+      max-lifetime: 1800000 #此属性控制池中连接的最长生命周期，值0表示无限生命周期，默认1800000即30分钟
+      connection-timeout: 30000 #数据库连接超时时间,默认30秒，即30000
+      connection-test-query: SELECT 1
+#eureka配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8071/eureka/
+  instance:
+    prefer-ip-address: true
+

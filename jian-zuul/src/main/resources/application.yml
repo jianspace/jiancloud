@@ -1,0 +1,18 @@
+server:
+  port: 8075
+spring:
+  application:
+    name: jian-zuul
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8071/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,hystrix.stream,routes
+zuul:
+  prefix: /jsy
+  routes:
+    jian-blogs: /blogs/**

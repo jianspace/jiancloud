@@ -1,0 +1,15 @@
+package com.jian.zuul;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
+
+@SpringBootApplication
+@EnableZuulProxy
+public class JianZuulApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(JianZuulApplication.class, args);
+    }
+
+}
