@@ -5,8 +5,8 @@ spring:
     name: jian-blogs
   datasource:
     url: jdbc:mysql://120.79.97.178:3306/jian_blogs?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false&serverTimezone=Asia/Shanghai
-    username: root
-    password: j839866596X!
+    username: jiancloud
+    password: jian123!X
     driver-class-name: com.mysql.cj.jdbc.Driver
     #hikari数据库连接池
     hikari:

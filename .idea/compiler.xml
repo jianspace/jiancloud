@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="jian-blogs" />
+        <module name="jian-config" />
         <module name="jian-eureka" />
         <module name="jian-zuul" />
       </profile>
@@ -15,6 +16,7 @@
       <module name="jian-blog" target="1.8" />
       <module name="jian-blogs" target="1.8" />
       <module name="jian-cloud" target="1.8" />
+      <module name="jian-config" target="1.8" />
       <module name="jian-eureka" target="1.8" />
       <module name="jian-zuul" target="1.8" />
     </bytecodeTargetLevel>
@@ -23,6 +25,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="jian-blog" options="-parameters" />
       <module name="jian-blogs" options="-parameters" />
+      <module name="jian-config" options="-parameters" />
       <module name="jian-eureka" options="-parameters" />
       <module name="jian-zuul" options="-parameters" />
     </option>

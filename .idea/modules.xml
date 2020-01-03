@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/jian-blogs/jian-blogs.iml" filepath="$PROJECT_DIR$/jian-blogs/jian-blogs.iml" />
       <module fileurl="file://$PROJECT_DIR$/jian-cloud.iml" filepath="$PROJECT_DIR$/jian-cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jian-config/jian-config.iml" filepath="$PROJECT_DIR$/jian-config/jian-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/jian-eureka/jian-eureka.iml" filepath="$PROJECT_DIR$/jian-eureka/jian-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/jian-zuul/jian-zuul.iml" filepath="$PROJECT_DIR$/jian-zuul/jian-zuul.iml" />
     </modules>
