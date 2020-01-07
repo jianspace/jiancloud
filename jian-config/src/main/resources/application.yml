@@ -10,7 +10,7 @@ spring:
       server:
         git:
           uri: https://github.com/JianSiYuan/config-repo.git
-          username: accout
+          username: account
           password: password
 #          uri: git@github.com:JianSiYuan/config-repo.git
           clone-on-start: true
