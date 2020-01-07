@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: jian-zuul
+  cloud:
+    config:
+      name: jiancloud-zuul
+      profile: dev
+      label: master
+      discovery:
+        enabled: true #启用服务发现
+        service-id: jian-config
+
+#      fail-fast: true重试机制
+#      uri: http://localhost:8077
+      #https://blog.csdn.net/qq_34886352/article/details/81508251
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8071/eureka/
+  instance:
+    prefer-ip-address: true
