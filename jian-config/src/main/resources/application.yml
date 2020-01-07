@@ -1,0 +1,33 @@
+server:
+  port: 8077
+spring:
+  application:
+    name: jian-config
+  cloud:
+    config:
+#      fail-fast:重试机制
+#        true
+      server:
+        git:
+          uri: https://github.com/JianSiYuan/config-repo.git
+          username: accout
+          password: password
+#          uri: git@github.com:JianSiYuan/config-repo.git
+          clone-on-start: true
+#          repos:
+#            team-a:
+#              pattern: jiancloud-zuul-*
+#              clone-on-start: true
+#              uri: https://github.com/JianSiYuan/config-repo/blob/master/jiancloud-zuul-dev.yml
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8071/eureka/
+  instance:
+    prefer-ip-address: true
+
+logging:
+  level:
+    org.springframework.boot: debug
+    org.springframework.cloud: debug
